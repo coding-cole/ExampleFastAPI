@@ -1,10 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from .routers import auth_routes, post_routes, user_routes, vote_routes
-from .config import settings
-
-
-print(settings.database_password)
 
 # models.Base.metadata.create_all(bind=engine) # no longer needed since we now use alembic
 
